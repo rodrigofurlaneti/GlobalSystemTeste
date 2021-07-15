@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XmrEtBOMlqXuHmaTEuSGlNE1Msbe0uTf85dVGqaE1y6L7WLu6YynrnThDQZsZJrQCbEcx6+dzBedywgtbArm0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\r.madeira.furlaneti\\Documents\\GitHub\\GlobalSystemTeste\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\r.madeira.furlaneti\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
