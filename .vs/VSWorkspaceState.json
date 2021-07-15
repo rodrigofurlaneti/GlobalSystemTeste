@@ -4,8 +4,11 @@
     "\\src",
     "\\src\\ProofOfConceptConsole",
     "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste",
-    "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste"
+    "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste",
+    "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste\\Repository",
+    "\\src\\Solution",
+    "\\src\\Solution\\WebApplicationGlobalSystemTeste"
   ],
-  "SelectedNode": "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste.sln",
+  "SelectedNode": "\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste.sln",
   "PreviewInSolutionExplorer": false
 }

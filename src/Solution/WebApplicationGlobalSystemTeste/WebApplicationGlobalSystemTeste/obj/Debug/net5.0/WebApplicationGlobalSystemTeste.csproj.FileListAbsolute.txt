@@ -39,3 +39,4 @@ C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\Web
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\net5.0\ref\WebApplicationGlobalSystemTeste.dll
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\net5.0\WebApplicationGlobalSystemTeste.pdb
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\net5.0\WebApplicationGlobalSystemTeste.genruntimeconfig.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\net5.0\Razor\Views\Result\Index.cshtml.g.cs

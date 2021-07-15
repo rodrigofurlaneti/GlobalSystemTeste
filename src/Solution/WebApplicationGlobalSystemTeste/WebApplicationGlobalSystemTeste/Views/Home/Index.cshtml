@@ -7,39 +7,72 @@
     <div class="container" style="padding-bottom:20px;">
         <div class="row">
             <div class="col-sm-2">
-                <button type="button" class="btn btn-dark btn-sm">Iniciar</button>
+                <button type="button" class="btn btn-dark btn-sm" onclick="handle()">Iniciar</button>
             </div>
             <div class="col-sm-10">
             </div>
         </div>
     </div>
-            <div class="container">
-                <div class="row align-items-start">
-                    @foreach (var fighter in ViewBag.Fighter)
-                    {
-                        <div class="col" style="padding-bottom:50px;">
-                            <div class="card" style="width: 15rem;">
-                                <div class="card-header">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="transform: scale(1.5);">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <h6>@fighter.Name</h6>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Idade: @fighter.Age</p>
-                                    <p class="card-text">Lutas: @fighter.Fights</p>
-                                    <p class="card-text">Derrotas: @fighter.Defeats</p>
-                                    <p class="card-text">Vitórias: @fighter.Victories</p>
-                                    <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
-                                </div>
+    <div class="container">
+        <div class="row align-items-start">
+            @foreach (var fighter in ViewBag.Fighter)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="@fighter.Id" style="transform: scale(1.5);" onclick ='handleClick(this.id, this);'>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
                             </div>
                         </div>
-                    }
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <p>Github <a href="https://github.com/rodrigofurlaneti">Rodrigo Furlaneti</a>.</p>
+            }
         </div>
+    </div>
+
+    <p>Github <a href="https://github.com/rodrigofurlaneti">Rodrigo Furlaneti</a></p>
+    <p>Repository <a href="https://github.com/rodrigofurlaneti/GlobalSystemTeste">GlobalSystemTeste</a></p>
+
+</div>
+<script>
+    localStorage.clear();
+    var list = JSON.parse(localStorage.getItem('listaId') || '[]');
+    function handleClick(id, cb) {
+        if (cb.checked == false) {
+            let position = list.findIndex(item => item.id === id);
+            if (position != -1) {
+                list.splice(position, position);
+                localStorage.setItem("listaId", JSON.stringify(list));
+            }
+        }
+        if (cb.checked == true) {
+            list.push({
+                id: id
+            });
+            localStorage.setItem("listaId", JSON.stringify(list));
+        }
+    };
+    function handle() {
+        if (list.length == 16) {
+            alert("Quantidade ok!");
+            window.location.href = "@Url.Action("Index", "Result")";
+        }
+        if (list.length < 16) {
+            alert("Quantidade minima não atingida, tem que selecionar 16 lutadores!");
+        }
+        if (list.length > 16) {
+            alert("Quantidade máxima atingida, tem que selecionar 16 lutadores!");
+        }
+    };
+</script>
 
