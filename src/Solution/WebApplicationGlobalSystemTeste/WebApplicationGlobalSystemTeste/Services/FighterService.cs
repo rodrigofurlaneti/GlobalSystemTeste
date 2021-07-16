@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Extensions.Primitives;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using WebApplicationGlobalSystemTeste.Data;
 using WebApplicationGlobalSystemTeste.Models;
@@ -9,8 +12,15 @@ namespace WebApplicationGlobalSystemTeste.Services
     {
         #region Properties
         
-        public FighterData fighterData { get; set; }
-        public Task<List<FighterModel>> task { get; set; }
+        public FighterData Data { get; set; }
+        public Task<List<FighterModel>> Task { get; set; }
+        public List<FighterModel> ListSelect { get; set; }
+        public List<FighterModel> ListRepository { get; set; }
+        public List<FighterModel> ListFighters { get; set; }
+        public List<FighterModel> ListSelectOrderBy { get; set; }
+        public List<FighterModel> ListWednesdays { get; set; }
+        public FighterService Service { get; set; }
+        public FighterModel Model { get; set; }
 
         #endregion
 
@@ -27,15 +37,15 @@ namespace WebApplicationGlobalSystemTeste.Services
 
         public async Task<List<FighterModel>> FindAllAsync()
         {
-            fighterData = new FighterData();
-            task = fighterData.GetFightersAsync();
+            Data = new FighterData();
+            Task = Data.GetFightersAsync();
             List<FighterModel> list = new List<FighterModel>();
-            await task.ContinueWith(task =>
+            await Task.ContinueWith(task =>
             {
-                var fighters = task.Result;
-                foreach (var fighter in fighters)
+                ListFighters = task.Result;
+                foreach (var fighter in ListFighters)
                 {
-                    var newFighter = new FighterModel()
+                    Model = new FighterModel()
                     {
                         Id = fighter.Id,
                         Name = fighter.Name,
@@ -45,11 +55,66 @@ namespace WebApplicationGlobalSystemTeste.Services
                         Defeats = fighter.Defeats,
                         Victories = fighter.Victories
                     };
-                    list.Add(newFighter);
+                    list.Add(Model);
                 }
             },
             TaskContinuationOptions.OnlyOnRanToCompletion);
-            return await task;
+            return await Task;
+        }
+
+
+        public async Task<List<FighterModel>> FindSelectAsync(StringValues GetIds)
+        {
+            ListSelect = new List<FighterModel>();
+            Service = new FighterService();
+            ListRepository = await Service.FindAllAsync();
+            var arr = GetIds.ToString().Split(",");
+            foreach (var item in ListRepository)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (arr[i] == item.Id)
+                    {
+                        ListSelect.Add(item);
+                    }
+                }
+            }
+            ListSelectOrderBy = ListSelect.OrderBy(x => x.Age).ToList();
+            return ListSelectOrderBy;
+        }
+
+        
+        public List<FighterModel> WednesdaysAsync(List<FighterModel> ListFighterModel)
+        {
+            foreach (var item in ListFighterModel)
+            {
+                var percentage = (Convert.ToDouble(item.Victories) / Convert.ToDouble(item.Fights)) * 100;
+                item.Percentage = Math.Truncate(percentage);
+            }
+            var ListPercentage = ListFighterModel.OrderBy(x => x.Percentage).ToList();
+            ListPercentage.RemoveRange(7, 8);
+            return ListPercentage;
+        }
+
+        public List<FighterModel> SemiFinalAsync(List<FighterModel> ListFighterModel)
+        {
+            var ListPercentage = ListFighterModel.OrderBy(x => x.Percentage).ToList();
+            ListPercentage.RemoveRange(3, 4);
+            return ListPercentage;
+        }
+
+        public List<FighterModel> FinalAsync(List<FighterModel> ListFighterModel)
+        {
+            var ListPercentage = ListFighterModel.OrderBy(x => x.Percentage).ToList();
+            ListPercentage.RemoveRange(1, 2);
+            return ListPercentage;
+        }
+
+        public List<FighterModel> ChampionAsync(List<FighterModel> ListFighterModel)
+        {
+            var ListPercentage = ListFighterModel.OrderBy(x => x.Percentage).ToList();
+            ListPercentage.RemoveRange(0, 1);
+            return ListPercentage;
         }
 
         #endregion

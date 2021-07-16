@@ -21,6 +21,8 @@ namespace WebApplicationGlobalSystemTeste.Models
         [JsonProperty("vitorias")]
         public string Victories { get; set; }
 
+        public virtual double Percentage { get; set; }
+
         #endregion
     }
 }

@@ -62,7 +62,7 @@ using WebApplicationGlobalSystemTeste.Models;
             WriteLiteral("\r\n<div class=\"text-center\">\r\n    <h1 class=\"display-4\">Torneio de Luta</h1>\r\n    \r\n\r\n    <div class=\"container\" style=\"padding-bottom:20px;\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-2\">\r\n                ");
             EndContext();
             BeginContext(344, 224, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebf168ab1a9d4700b2c87dbcc2afd98d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "249eaf028a7c429b942d43194347c980", async() => {
                 BeginContext(391, 170, true);
                 WriteLiteral("\r\n                    <input type=\"hidden\" id=\"ids\" name=\"ids\" />\r\n                    <input class=\"btn btn-dark btn-sm\" type=\"submit\" value=\"Iniciar\">\r\n                ");
                 EndContext();

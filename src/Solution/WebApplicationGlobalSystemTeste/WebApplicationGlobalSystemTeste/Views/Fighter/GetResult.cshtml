@@ -8,11 +8,153 @@
 
     <h1 class="display-4">Oitavas</h1>
 
-
-        <p>Github <a href="https://github.com/rodrigofurlaneti">Rodrigo Furlaneti</a></p>
-        <p>Repository <a href="https://github.com/rodrigofurlaneti/GlobalSystemTeste">GlobalSystemTeste</a></p>
-
+    <div class="container">
+        <div class="row align-items-start">
+            @foreach (var fighter in Model)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
+
+
+    <h1 class="display-4">Quartas</h1>
+
+    <div class="container">
+        <div class="row align-items-start">
+            @foreach (var fighter in ViewBag.Wednesdays)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                            <p class="card-text">Porcetagem: @fighter.Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <h1 class="display-4">Semifinal</h1>
+
+    <div class="container">
+        <div class="row align-items-start">
+            @foreach (var fighter in ViewBag.Semifinal)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                            <p class="card-text">Porcetagem: @fighter.Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <h1 class="display-4">Final</h1>
+
+    <div class="container">
+        <div class="row align-items-start">
+            @foreach (var fighter in ViewBag.Final)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                            <p class="card-text">Porcetagem: @fighter.Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <h1 class="display-4">Campeão</h1>
+
+    <div class="container">
+        <div class="row align-items-center">
+            @foreach (var fighter in ViewBag.Champion)
+            {
+                <div class="col" style="padding-bottom:50px;">
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-header">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <h6>@fighter.Name</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Idade: @fighter.Age</p>
+                            <p class="card-text">Lutas: @fighter.Fights</p>
+                            <p class="card-text">Derrotas: @fighter.Defeats</p>
+                            <p class="card-text">Vitórias: @fighter.Victories</p>
+                            <p class="card-text">Artes Marciais: @fighter.MartialArts.Length</p>
+                            <p class="card-text">Porcetagem: @fighter.Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <p>Github <a href="https://github.com/rodrigofurlaneti">Rodrigo Furlaneti</a></p>
+    <p>Repository <a href="https://github.com/rodrigofurlaneti/GlobalSystemTeste">GlobalSystemTeste</a></p>
+
+</div>
 
 
 
