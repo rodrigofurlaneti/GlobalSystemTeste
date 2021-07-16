@@ -12,7 +12,7 @@
             <div class="col-sm-2">
                 <form method="GET" action="/Fighter/GetResult">
                     <input type="hidden" id="ids" name="ids" />
-                    <input class="btn btn-dark btn-sm" type="submit" value="Iniciar">
+                    <input class="btn btn-dark btn-sm" type="submit" value="Iniciar" onclick="CheckQuantity();">
                 </form>
             </div>
             <div class="col-sm-10">
@@ -61,5 +61,22 @@
         document.querySelector("[name='ids']").value = arr;
         return arr;
     }
+    function CheckQuantity() {
+        var repository = document.querySelector("[name='ids']").value;
+        var array = repository.split(',')
+        if (array.length == 16)
+        {
+            alert("Quantidade ok!")
+        }
+        if (array.length < 16) {
+            event.preventDefault();
+            alert("Tem que selecionar 16 lutadores!")
+        }
+        if (array.length > 16) {
+            event.preventDefault();
+            alert("Tem que selecionar 16 lutadores!")
+        }
+    }
+
 </script>
 
