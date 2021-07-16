@@ -16,7 +16,6 @@ C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\Web
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.TagHelpers.output.cache
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.RazorCoreGenerate.cache
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\Fighter\Index.cshtml.g.cs
-C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\Fighter\Result.cshtml.g.cs
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -28,3 +27,5 @@ C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\Web
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.pdb
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.genruntimeconfig.cache
 C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.csproj.CopyComplete
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\WebApplicationGlobalSystemTeste.csproj.AssemblyReference.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp2.1\Razor\Views\Fighter\GetResult.cshtml.g.cs

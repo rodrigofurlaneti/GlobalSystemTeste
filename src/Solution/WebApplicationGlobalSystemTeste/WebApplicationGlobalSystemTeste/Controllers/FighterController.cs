@@ -26,8 +26,9 @@ namespace WebApplicationGlobalSystemTeste.Controllers
             return View(await fighterService.FindAllAsync());
         }
 
-        public IActionResult Result()
+        public async Task<ActionResult> GetResult()
         {
+            var a = HttpContext.Request.Query;
             return View();
         }
 

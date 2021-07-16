@@ -5,10 +5,15 @@
 
 <div class="text-center">
     <h1 class="display-4">Torneio de Luta</h1>
+    
+
     <div class="container" style="padding-bottom:20px;">
         <div class="row">
             <div class="col-sm-2">
-                <button type="button" class="btn btn-dark btn-sm" onclick=location.href ='@Url.Action("Result", "Fighter" )' ;return false;>Iniciar</button>
+                <form method="GET" action="/Fighter/GetResult">
+                    <input type="hidden" id="ids" name="ids" />
+                    <input class="btn btn-dark btn-sm" type="submit" value="Iniciar">
+                </form>
             </div>
             <div class="col-sm-10">
             </div>
@@ -22,7 +27,7 @@
                     <div class="card" style="width: 15rem;">
                         <div class="card-header">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="@fighter.Id" style="transform: scale(1.5);" onclick='handleClick(this.id, this);'>
+                                <input class="form-check-input check" type="checkbox" id="@fighter.Id" name="@fighter.Id" onclick="GetByIdCheckbox();" style="transform: scale(1.5);" />
                                 <label class="form-check-label" for="flexCheckDefault">
                                     <h6>@fighter.Name</h6>
                                 </label>
@@ -43,6 +48,18 @@
 
     <p>Github <a href="https://github.com/rodrigofurlaneti">Rodrigo Furlaneti</a></p>
     <p>Repository <a href="https://github.com/rodrigofurlaneti/GlobalSystemTeste">GlobalSystemTeste</a></p>
-
 </div>
+<script>
+    function GetByIdCheckbox() {
+        var arr = [];
+        var inputElements = document.getElementsByClassName('check');
+        for (var i = 0; inputElements[i]; ++i) {
+            if (inputElements[i].checked)
+                arr.push(inputElements[i].name);
+        }
+        console.log(arr)
+        document.querySelector("[name='ids']").value = arr;
+        return arr;
+    }
+</script>
 

@@ -2,13 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\ProofOfConceptConsole",
     "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste",
     "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste",
     "\\src\\ProofOfConceptConsole\\ConsoleAppGlobalSystemTeste\\ConsoleAppGlobalSystemTeste\\Repository",
     "\\src\\Solution",
-    "\\src\\Solution\\WebApplicationGlobalSystemTeste"
+    "\\src\\Solution\\WebApplicationGlobalSystemTeste",
+    "\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste",
+    "\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste\\Services"
   ],
-  "SelectedNode": "\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste.sln",
+  "SelectedNode": "\\src\\Solution\\WebApplicationGlobalSystemTeste\\WebApplicationGlobalSystemTeste\\Services\\FighterService.cs",
   "PreviewInSolutionExplorer": false
 }
