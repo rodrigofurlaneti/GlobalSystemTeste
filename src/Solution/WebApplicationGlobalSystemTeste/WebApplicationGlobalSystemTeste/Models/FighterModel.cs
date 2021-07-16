@@ -4,6 +4,8 @@ namespace WebApplicationGlobalSystemTeste.Models
 {
     public class FighterModel
     {
+        #region Properties
+
         [JsonProperty("id")]
         public string Id { get; set; }
         [JsonProperty("nome")]
@@ -18,5 +20,7 @@ namespace WebApplicationGlobalSystemTeste.Models
         public string Defeats { get; set; }
         [JsonProperty("vitorias")]
         public string Victories { get; set; }
+
+        #endregion
     }
 }

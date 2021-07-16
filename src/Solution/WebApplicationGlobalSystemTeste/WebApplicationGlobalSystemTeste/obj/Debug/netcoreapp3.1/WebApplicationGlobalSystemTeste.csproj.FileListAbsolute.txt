@@ -1,0 +1,6 @@
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.AssemblyInfoInputs.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.AssemblyInfo.cs
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.csproj.CoreCompileInputs.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.RazorAssemblyInfo.cache
+C:\Users\r.madeira.furlaneti\Documents\GitHub\GlobalSystemTeste\src\Solution\WebApplicationGlobalSystemTeste\WebApplicationGlobalSystemTeste\obj\Debug\netcoreapp3.1\WebApplicationGlobalSystemTeste.RazorAssemblyInfo.cs
